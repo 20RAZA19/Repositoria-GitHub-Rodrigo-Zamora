@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="StyleSheet" href="css.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="calculadora" >
+        <div class="name">   
+            <h1>CALCULADORA</h1>
+        </div>
+        <header class="contenido2">
+            <input type="number" id="n1" class="input" placeholder="0">
+            <input type="number" id="n2" class="input" placeholder="0">
+        </header>
+        <div style="background-color: black; height: 40px;">
+            <input type="text" id="output" class="input" readonly>
+        </div>
+        <div class="contenido" style="border-top: solid 2px black; border-bottom: solid 2px black;">
+            <div></div>
+            <button onclick="suma()">+</button>
+            <button onclick="resta()">-</button>
+            <button onclick="multiplicacion()">*</button>
+            <button onclick="division()">/</button>
+            <button onclick="exponente()">^</button>
+            <button onclick="raiz()">√</button>
+            <button onclick="limpiar()" style="background-color: rgb(255, 125, 78);">CE</button>
+        </div>
+        <footer>
+            <p> Nota: Para operar la raíz se debe considerar que el primer número a ingresar es la base, mientras que el segundo número es el índice*
+        </footer>
+    </div>
+    <script src="js.js?v=1.1"></script>
+</body>
+</html>

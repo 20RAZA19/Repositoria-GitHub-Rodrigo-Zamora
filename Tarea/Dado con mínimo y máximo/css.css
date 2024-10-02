@@ -1,0 +1,39 @@
+html{
+    background-color: antiquewhite;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 500px;
+    flex-direction: column;
+}
+
+input{
+    width: 260px;
+    height: 20px;
+    margin: 10px;
+    font-size: 14px;
+}
+
+button{
+    border-radius: 5px;
+    width: 80px;
+    height: 40px;
+    margin: auto;
+    font-size: 14px;
+    margin: 20px;
+    justify-content: center;
+    color: white;
+    background-color: green;
+}
+
+@media (min-width:600px){
+    .content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: auto;
+    }
+}
